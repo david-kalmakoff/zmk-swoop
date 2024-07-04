@@ -8,7 +8,6 @@ exposes: [i2c_oled]
 features:
   - keys
   - display
-  - encoders
   - underglow
 siblings:
   - swoop_left
