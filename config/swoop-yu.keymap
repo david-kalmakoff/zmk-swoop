@@ -14,7 +14,6 @@
     behaviors {
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -26,7 +25,6 @@
         };
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
-            label = "LTQ";
             bindings =
                 <&mo>,
                 <&kp>;
@@ -43,7 +41,7 @@
         compatible = "zmk,keymap";
 
         base {
-            label = "Base";
+            display-name = "Base";
             bindings = <
 &kp Q  &kp W       &kp E        &kp R      &kp T          &kp Y          &kp U       &kp I    &kp O      &kp P
 &kp A  &kp S       &kp D        &kp F    &ltq 2 G          &kp H          &kp J       &kp K    &kp L   &kp SEMI
@@ -55,7 +53,7 @@
         };
 
         number {
-            label = "NUMBER";
+            display-name = "NUMBER";
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5       &kp NUMBER_6      &kp NUMBER_7      &kp NUMBER_8       &kp NUMBER_9  &kp NUMBER_0
      &kp TAB      &kp LEFT        &kp UP     &kp RIGHT     &kp GRAVE          &kp MINUS         &kp EQUAL  &kp LEFT_BRACKET  &kp RIGHT_BRACKET        &trans
@@ -67,7 +65,7 @@
         };
 
         f_media {
-            label = "MEDIA";
+            display-name = "MEDIA";
             bindings = <
 &kp F1  &kp F2  &kp F3     &kp F4        &kp F5             &kp F6  &kp C_AL_MY_COMPUTER         &none   &kp PSCRN  &kp C_AC_BOOKMARKS
 &trans  &trans  &trans     &trans        &trans          &kp K_APP            &kp C_PREV  &kp C_VOL_UP  &kp C_NEXT    &kp C_AC_REFRESH
@@ -79,7 +77,7 @@
         };
 
         symbol {
-            label = "SYMBOL";
+            display-name = "SYMBOL";
             bindings = <
      &kp EXCL         &kp AT          &kp HASH      &kp DOLLAR  &kp PERCENT          &kp CARET         &kp AMPS         &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
  &kp QUESTION  &kp LESS_THAN  &kp GREATER_THAN   &kp C_AC_FIND       &trans    &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI       &rgb_ug RGB_BRI                 &trans
@@ -91,7 +89,7 @@
         };
 
         ble {
-            label = "BLE";
+            display-name = "BLE";
             bindings = <
   &bt BT_SEL 0     &bt BT_SEL 1          &bt BT_SEL 2           &bt BT_SEL 3  &bt BT_SEL 4    &trans  &trans  &trans  &trans  &trans
 &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS        &trans    &trans  &trans  &trans  &trans  &trans
