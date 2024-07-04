@@ -1,0 +1,2 @@
+osource "/root/dev/zmk/app/boards/shields/*/Kconfig.shield"
+osource "/root/dev/zmk-swoop/config//boards/shields/*/Kconfig.shield"
