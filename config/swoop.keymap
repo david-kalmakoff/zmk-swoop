@@ -13,7 +13,6 @@
     behaviors {
         tab_esc_ctrl: tab_esc_ctrl {
             compatible = "zmk,behavior-tap-dance";
-            label = "TAB_ESC_CTRL";
             #binding-cells = <0>;
             bindings =
                 <&mt LCTRL ESC>,
@@ -21,7 +20,6 @@
         };
         gqt: global-quick-tap {
             compatible = "zmk,behavior-hold-tap";
-            label = "GLOBAL_QUICK_TAP";
             bindings =
                 <&kp>,
                 <&kp>;
@@ -33,7 +31,6 @@
         };
         ltq: ltq {
             compatible = "zmk,behavior-hold-tap";
-            label = "LTQ";
             bindings =
                 <&mo>,
                 <&kp>;
@@ -92,7 +89,7 @@
         compatible = "zmk,keymap";
 
         base {
-            label = "Base";
+            display-name = "Base";
             bindings = <
       &kp Q        &kp W         &kp E         &kp R          &kp T               &kp Y             &kp U         &kp I        &kp O           &kp P
 &gqt LGUI A  &gqt LALT S  &gqt LCTRL D  &gqt LSHFT F          &kp G               &kp H      &gqt RSHFT J  &gqt RCTRL K  &gqt RALT L  &gqt RGUI SEMI
@@ -104,7 +101,7 @@
         };
 
         number {
-            label = "NUMBER";
+            display-name = "NUMBER";
             bindings = <
 &kp N1  &kp N2  &kp N3  &kp N4    &kp N5      &kp N6    &kp N7     &kp N8     &kp N9   &kp N0
 &kp F1  &kp F2  &kp F3  &kp F4    &kp F5    &kp LEFT  &kp DOWN     &kp UP  &kp RIGHT  &kp F11
@@ -116,7 +113,7 @@
         };
 
         symbol {
-            label = "SYMBOL";
+            display-name = "SYMBOL";
             bindings = <
 &kp EXCL  &kp AT  &kp HASH           &kp DLLR     &kp PRCNT    &kp CARET       &kp AMPS        &kp STAR  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
  &kp TAB   &none     &none            &kp SQT     &kp GRAVE    &kp MINUS      &kp EQUAL        &kp LBKT     &kp RIGHT_BRACKET               &kp BSLH
@@ -128,7 +125,7 @@
         };
 
         ble {
-            label = "BLE";
+            display-name = "BLE";
             bindings = <
 &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp KP_N7  &kp KP_N8  &kp KP_N9  &none  &kp BSPC
        &none         &none         &none    &bt BT_CLR  &out OUT_TOG    &kp KP_N4  &kp KP_N5  &kp KP_N6  &none     &none
