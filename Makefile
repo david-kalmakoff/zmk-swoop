@@ -7,12 +7,12 @@ copy-config:
 build-right:
 	make copy-config
 	( cd ~/dev/zmk/app && west build --build-dir ~/dev/zmk-swoop/build/right \
-	--board nice_nano_v2 -- -DSHIELD=swoop_right )
+	--board nice_nano_v2 -- -DSHIELD=swoop_right -DZMK_CONFIG="/root/dev/zmk-swoop/config" )
 	rm -rf ~/dev/zmk-swoop/swoop_right.uf2
 	cp ~/dev/zmk-swoop/build/right/zephyr/zmk.uf2 ~/dev/zmk-swoop/swoop_right.uf2
 
 build-left:
 	make copy-config
-	( cd ~/dev/zmk/app && west build --build-dir ~/dev/zmk-swoop/build/left --board nice_nano_v2 -- -DSHIELD=swoop_left )
+	( cd ~/dev/zmk/app && west build --build-dir ~/dev/zmk-swoop/build/left --board nice_nano_v2 -- -DSHIELD=swoop_left -DZMK_CONFIG="/root/dev/zmk-swoop/config/" )
 	rm -rf ~/dev/zmk-swoop/swoop_left.uf2
 	cp ~/dev/zmk-swoop/build/left/zephyr/zmk.uf2 ~/dev/zmk-swoop/swoop_left.uf2
